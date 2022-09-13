@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="/result"><span class="a">Sales</span> <span class="b"> Prediction</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/graph">Graph <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/accuracy">Accuracy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/accuracy">PowerBI</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn my-2 my-sm-0" type="submit" (click)="goToPage()">Logout</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Mean Absolute Error</h5>
+        <a  class="btn link">69.893</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Root Mean Squared Error</h5>
+        <a  class="btn link">90.986</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 card-3" >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">R2 Score</h5>
+        <a  class="btn link">0.360</a>
+      </div>
+    </div>
+  </div>
+</div>

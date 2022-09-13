@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	outline: none;
+	border: none;
+}
+
+body{
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+}
+html{
+	height: -webkit-fill-available;
+}
+
+
+
+html, body {
+	height: 100%;
+	background: black;
+}

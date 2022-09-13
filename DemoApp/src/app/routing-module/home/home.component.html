@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="/home"><span class="a">Upload</span> <span class="b"> File</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0"  >
+      <button class="btn my-2 my-sm-0" type="submit" (click)="goToPage()">Logout</button>
+    </form>
+  </div>
+</nav>
+
+<div >
+  <form method="POST" class="formupload">
+    <input type="file"  accept=".xlsx,.csv,.xls " id="fileID"  (change)="getFile($event)">
+    <div [innerHTML]="fileName" ></div>
+    <p><br><br> Drag your file here or click in this area. <br><br>* Files Supported: XLSX, XLS, CSV *</p>
+    <button type="submit" class="form-control form-control-lg" id="formFileLg" name="file" (click)="uploadFile()" >Upload</button>
+  </form>
+</div>

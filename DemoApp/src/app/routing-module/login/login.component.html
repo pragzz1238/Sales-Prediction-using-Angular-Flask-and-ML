@@ -1,0 +1,39 @@
+<div class="align">
+    
+    <img class="logo" src="assets\logo.svg">
+    <div class="card">
+        <div class="head">
+            <div></div>
+            <a id="login" class="selected">Login</a>
+            <div></div>
+        </div>
+        <div class="tabs">
+            <form [formGroup]="forms" (ngSubmit)="submit()">
+                <div class="inputs">
+                    <div class="form-group">
+                        <input placeholder="Email" class="form-control" type="email" name="email"
+                            formControlName="email">
+                        <img src="assets/user.svg">
+                        <div *ngIf="func.email.touched && func.email.invalid" class="alert alert-danger">
+                            <div *ngIf="func.email.errors?.['required']">* Email is required</div>
+                            <div *ngIf="func.email.errors?.['email']">* Enter valid Email</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Password" class="form-control" type="password" name="pass"
+                            formControlName="pass">
+                        <img src="assets/pass.svg">
+                        <div *ngIf="func.pass.touched && func.pass.invalid" class="alert alert-danger">
+                            <div *ngIf="func.pass.errors?.['required']">* Password is required</div>
+                        </div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                </div>
+                <button type="submit" [disabled]="forms.invalid" (click)="goToPage()">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
