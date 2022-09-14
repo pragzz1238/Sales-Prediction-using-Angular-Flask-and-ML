@@ -99,7 +99,7 @@ def project_api_routes(endpoints):
 
             pyplot.savefig('plot.jpg')
             image = cv2.imread('plot.jpg')
-            path = r"P:\Pictures\Academics\CLOUD PROJECT\DemoApp\src\assets"
+            path = r"../../DemoApp/src/assets"
             (cv2.imwrite(os.path.join(path,'plot.jpg'), image))
 
             status = {
