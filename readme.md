@@ -9,8 +9,6 @@ This project is a Sales Prediction system built using Angular for the front-end,
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
