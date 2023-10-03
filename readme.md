@@ -46,21 +46,21 @@ Follow these steps to set up the Sales Prediction system:
 
 2. Navigate to the project directory:
 
-  ```bash
-  cd Sales-Prediction-using-Angular-Flask-and-ML
-  ```
+     ```bash
+     cd Sales-Prediction-using-Angular-Flask-and-ML
+     ```
 
 3. Install the required dependencies for both the front-end and back-end:
 
-  ```bash
-  # Install front-end dependencies
-  cd client
-  npm install
-  
-  # Install back-end dependencies
-  cd ../server
-  pip install -r requirements.txt
-  ```
+     ```bash
+     # Install front-end dependencies
+     cd client
+     npm install
+     
+     # Install back-end dependencies
+     cd ../server
+     pip install -r requirements.txt
+     ```
 
 4. Configure the database connection, authentication, and ARIMA model parameters as needed in the Flask back-end and Angular front-end.
 
@@ -68,18 +68,18 @@ Follow these steps to set up the Sales Prediction system:
 
 1. Start the Flask back-end server:
 
-  ```bash
-  cd server
-  python app.py
-  ```
+     ```bash
+     cd server
+     python app.py
+     ```
   The server should start on http://localhost:5000.
 
 2. Start the Angular front-end:
 
-  ```bash
-  cd client
-  ng serve
-  ```
+     ```bash
+     cd client
+     ng serve
+     ```
   The Angular development server should start on http://localhost:4200.
 
 3. Open your web browser and navigate to http://localhost:4200 to access the Sales Prediction application.
