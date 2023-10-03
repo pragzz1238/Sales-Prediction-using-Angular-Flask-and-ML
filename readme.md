@@ -54,11 +54,11 @@ Follow these steps to set up the Sales Prediction system:
 
      ```bash
      # Install front-end dependencies
-     cd client
+     cd DemoApp
      npm install
      
      # Install back-end dependencies
-     cd ../server
+     cd ../crud_app
      pip install -r requirements.txt
      ```
 
@@ -69,7 +69,7 @@ Follow these steps to set up the Sales Prediction system:
 1. Start the Flask back-end server:
 
      ```bash
-     cd server
+     cd crud_app
      python app.py
      ```
      The server should start on http://localhost:5000.
@@ -77,7 +77,7 @@ Follow these steps to set up the Sales Prediction system:
 2. Start the Angular front-end:
 
      ```bash
-     cd client
+     cd DemoApp
      ng serve
      ```
      The Angular development server should start on http://localhost:4200.
