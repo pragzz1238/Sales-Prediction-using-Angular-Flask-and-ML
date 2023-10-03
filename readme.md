@@ -72,7 +72,6 @@ Follow these steps to set up the Sales Prediction system:
      cd crud_app
      python app.py
      ```
-     The server should start on http://localhost:5000.
 
 2. Start the Angular front-end:
 
@@ -80,7 +79,6 @@ Follow these steps to set up the Sales Prediction system:
      cd DemoApp
      ng serve
      ```
-     The Angular development server should start on http://localhost:4200.
 
 3. Open your web browser and navigate to http://localhost:4200 to access the Sales Prediction application.
 
